@@ -95,3 +95,47 @@ button {
   line-height: 1.33; /* 133.333% */
   letter-spacing: 0.04em;
 }
+
+/* Task-04 */
+.login-form {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.login-form label {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+}
+.login-form input {
+  width: 100%;
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+}
+.login-form button {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  width: min-content;
+  border-radius: 8px;
+  background: #4e75ff;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+}
+.login-form button:focus,
+.login-form button:active,
+.login-form button:hover {
+  background: #6c8cff;
+}
