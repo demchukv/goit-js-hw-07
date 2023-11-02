@@ -80,3 +80,18 @@ button {
 }
 
 /* Task-03 */
+#name-input {
+  width: 360px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+#name-input + h1 {
+  margin: 0;
+  color: #2e2f42;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: 0.04em;
+}
