@@ -16,6 +16,14 @@ body {
 input {
   padding: 8px;
   font: inherit;
+  outline: none;
+}
+input:hover {
+  border-color: #000;
+}
+input:active,
+input:focus {
+  border-color: #808080;
 }
 
 button {
@@ -171,4 +179,62 @@ button {
 .widget button:active,
 .widget button:hover {
   background: #6c8cff;
+}
+
+/* Task-06 */
+#controls,
+#boxes {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  color: #fff;
+}
+#controls {
+  margin-bottom: 16px;
+  align-items: center;
+}
+#boxes div {
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+
+#controls input {
+  padding: 8px 72px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+}
+#controls button {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  width: max-content;
+  border-radius: 8px;
+  background: #4e75ff;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+#controls button:focus,
+#controls button:active,
+#controls button:hover {
+  background: #6c8cff;
+}
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
+#controls button[data-destroy]:focus,
+#controls button[data-destroy]:active,
+#controls button[data-destroy]:hover {
+  background: #ff7070;
 }
